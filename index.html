@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivam Netke - Portfolio</title>
+    <style>
+      /* Reset & Fonts */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #0f1e17;
+        color: #f0f0f0;
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+      }
+
+      .container {
+        display: flex;
+        /* max-width: 1000px; */
+        width: 100%;
+        background-color: #102a20;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      }
+
+      aside.profile {
+        background-color: #0d241b;
+        padding: 30px;
+        text-align: center;
+        width: 300px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 3px solid #2fa886;
+      }
+
+      .native-name {
+        font-size: 1.2em;
+        color: #ccc;
+      }
+
+      .title,
+      .org {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #2fa886;
+      }
+
+      .social-icons {
+        margin-top: 20px;
+      }
+
+      .social-icons img {
+        height: 25px;
+        width: 25px;
+      }
+
+      .social-icons a {
+        margin: 0 8px;
+        color: #ccc;
+        text-decoration: none;
+        font-size: 1.2em;
+        transition: color 0.3s;
+      }
+
+      .social-icons a:hover {
+        color: #2fa886;
+      }
+
+      main {
+        padding: 30px;
+        flex: 1;
+      }
+
+      h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        color: #2fa886;
+      }
+
+      .about {
+        margin-bottom: 25px;
+      }
+
+      .btn {
+        background-color: #2fa886;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 15px;
+      }
+
+      .btn:hover {
+        background-color: #258f70;
+      }
+
+      .grid {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .section {
+        flex: 1;
+        min-width: 250px;
+      }
+
+      .section a {
+        text-decoration: none;
+        color: white;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .grid {
+          flex-direction: column;
+        }
+
+        aside.profile {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="profile">
+        <img
+          src="./WhatsApp Image 2025-04-15 at 11.05.45_6707039f.jpg"
+          alt="Profile Photo"
+          class="profile-img"
+        />
+        <h2>Shivam Netke</h2>
+        <!-- <p class="native-name">shivam netke</p> -->
+        <p class="title">C - C++ / Web Devloper</p>
+        <!-- <p class="org">OpenAI</p> -->
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/netke-shivam-192943295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          >
+            <span
+              ><img
+                src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-64.png"
+                alt="LinkedIn"
+            /></span>
+          </a>
+          <a href="https://github.com/shivamNetke">
+            <span
+              ><img
+                src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-64.png"
+                alt="GitHub"
+            /></span>
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=netkeshiv3521@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              <img
+                src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-gmail-64.png"
+                alt="Gmail"
+              />
+            </span>
+          </a>
+        </div>
+      </aside>
+      <main>
+        <h1>About Me</h1>
+        <div class="about">
+          <p>
+            Hello! I’m Shivam Netke, a passionate and dedicated tech enthusiast
+            currently pursuing my Bachelor of Business Administration in
+            Computer Applications (BBACA). I specialize in building efficient,
+            user-friendly, and secure software solutions. My academic journey
+            and hands-on experience have equipped me with a solid foundation in
+            C, C++, Python, JavaScript, HTML, CSS, and Android (Java/XML)
+            development. I am currently working on projects that merge
+            technology and real-world banking needs — including my ambitious
+            project, ONSP Bank, a smart banking system. Whether it's a mobile
+            app, full-stack web development, or backend infrastructure, I bring
+            creativity, commitment, and real problem-solving skills to the
+            table.
+          </p>
+          <a class="btn" onclick="downloadCV()">⬇ Download CV</a>
+        </div>
+        <div class="section">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <a href="https://serverofonspshivam.onrender.com/"
+                >ONSP - bank website 📎</a
+              >
+            </li>
+            <li>
+              <a href="https://pawpet-1anb.onrender.com/"
+                >Pawpet - pet website 📎</a
+              >
+            </li>
+          </ul>
+        </div>
+        <br />
+        <div class="grid">
+          <div class="section">
+            <h2>Skills</h2>
+            <ul>
+              <li>C</li>
+              <li>C++</li>
+              <li>Html</li>
+              <li>Js</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Interests</h2>
+            <ul>
+              <li>Web development</li>
+              <li>Software development</li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Education</h2>
+            <ul>
+              <li>BBA-CA – Ahmednagar colllege, Ahmednagar (SPPU)</li>
+              <li>MCA</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      function downloadCV() {
+        // You can change this to your actual CV file
+        const link = document.createElement("a");
+        link.href = "Shivam netke Resume.pdf";
+        link.download = "Shivam netke CV.pdf";
+        link.click();
+      }
+    </script>
+  </body>
+</html>
